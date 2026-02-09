@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login POS</title>
 <link rel="stylesheet" href="style.css">
+<title>Login</title>
 </head>
+
 <body>
 
-<h1>🧋 Milktea POS Login</h1>
+<h1>🧋 Milktea POS 2026</h1>
 
 <div class="container">
-<input id="email" placeholder="Email">
-<input id="pass" type="password" placeholder="Password">
-<button onclick="login()">Login</button>
 
-<p>No account? <a href="signup.html">Sign Up</a></p>
+<h2>Email Login</h2>
+<input id="emailInput" placeholder="Email">
+<input id="passInput" type="password" placeholder="Password">
+<button onclick="loginEmail()">Login</button>
+
+<h2>Cashier PIN</h2>
+<input id="pinInput" placeholder="PIN">
+<button onclick="loginPIN()">Login PIN</button>
+
+<a href="signup.html">Create Staff</a>
+
 </div>
 
 <script type="module" src="auth.js"></script>
