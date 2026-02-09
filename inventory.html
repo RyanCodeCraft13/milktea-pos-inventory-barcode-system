@@ -7,23 +7,25 @@
 <body>
 
 <div class="container">
-<h2>📦 Inventory</h2>
+<h2>Inventory</h2>
 
-<input id="item" placeholder="Item">
-<input id="qty" placeholder="Qty">
+<input id="item" placeholder="Item Name">
+<input id="qty" placeholder="Quantity">
 
-<button onclick="addInventory()">Add</button>
+<button onclick="addInventory()">Add Stock</button>
 
 <ul id="list"></ul>
 </div>
 
 <script>
 function addInventory(){
+
  let item=document.getElementById("item").value;
  let qty=document.getElementById("qty").value;
 
  let li=document.createElement("li");
  li.innerText=item+" - "+qty;
+
  document.getElementById("list").appendChild(li);
 }
 </script>
