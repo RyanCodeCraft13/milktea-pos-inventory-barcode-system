@@ -1,11 +1,20 @@
-<h1>Inventory</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inventory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<input id="item" placeholder="Item">
+<div class="container">
+<h2>📦 Inventory</h2>
+
+<input id="item" placeholder="Item Name">
 <input id="qty" placeholder="Quantity">
-
-<button onclick="addInventory()">Add</button>
+<button onclick="addInventory()">Add Stock</button>
 
 <ul id="list"></ul>
+</div>
 
 <script>
 function addInventory(){
@@ -18,3 +27,6 @@ function addInventory(){
  document.getElementById("list").appendChild(li);
 }
 </script>
+
+</body>
+</html>
