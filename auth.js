@@ -1,16 +1,22 @@
-function login(){
+import { auth } from "./firebase.js";
+import { 
+createUserWithEmailAndPassword,
+signInWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
- let user=document.getElementById("username").value;
- let pass=document.getElementById("password").value;
- let role=document.getElementById("role").value;
+window.signup = async function(){
+let email=document.getElementById("email").value;
+let pass=document.getElementById("pass").value;
 
- if(role==="admin" && user==="admin" && pass==="1234"){
-  window.location="dashboard.html";
- }
- else if(role==="employee" && user==="staff" && pass==="1234"){
-  window.location="pos.html";
- }
- else{
-  alert("Invalid Login");
- }
+await createUserWithEmailAndPassword(auth,email,pass);
+alert("Account Created");
+window.location="login.html";
+}
+
+window.login = async function(){
+let email=document.getElementById("email").value;
+let pass=document.getElementById("pass").value;
+
+await signInWithEmailAndPassword(auth,email,pass);
+window.location="pos.html";
 }
