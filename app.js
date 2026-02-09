@@ -1,7 +1,7 @@
-const products = {
- "MT001": {name:"Wintermelon", price:120},
- "MT002": {name:"Okinawa", price:110},
- "MT003": {name:"Taro", price:130}
+const products={
+ "MT001":{name:"Wintermelon",price:120},
+ "MT002":{name:"Okinawa",price:110},
+ "MT003":{name:"Taro",price:130}
 };
 
 let total=0;
