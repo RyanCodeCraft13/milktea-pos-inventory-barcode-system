@@ -17,8 +17,11 @@ function scanProduct(){
 
   let li=document.createElement("li");
   li.innerText=product.name+" ₱"+product.price;
-  document.getElementById("cart").appendChild(li);
 
+  document.getElementById("cart").appendChild(li);
   document.getElementById("total").innerText=total;
+ }
+ else{
+  alert("Product not found");
  }
 }
