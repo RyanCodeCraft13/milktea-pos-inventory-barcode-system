@@ -5,7 +5,7 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebas
 const firebaseConfig = {
  apiKey: "YOURKEY",
  authDomain: "YOURDOMAIN",
- projectId: "YOURPROJECTID",
+ projectId: "YOURPROJECTID"
 };
 
 const app = initializeApp(firebaseConfig);
